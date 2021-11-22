@@ -8,6 +8,7 @@ The fashion MNIST dataset contains 28x28 pixel pictures, which fall under one of
 
 As stated, we use 28 pixel at each time instance, so the input size is 28. As there are 10 classes, output size is 10. Following Eckhardts advice once again, I chose the number of hidden nodes using the formula: floor($\frac{2}{3} * input_size * output_size$), resulting in a hidden size of 186. After further experimentation, performance did not change much when reducing the hidden size to floor($\frac{1}{5} * input_size * output_size$) = 56, and also did not improve much when set to $input_size * output_size$ = 280, but I chose to stay with the originally suggested 186, as speed also did not vary much between the sizes.
 
-| Variable|Dimensions|
-| --------|------|
-| |$X_t$| | 28x1 |
+| Variable | Dimensions |
+| -------- | ------ |
+| |X<sub>t<\sub>| | 28x1 |
+| 
