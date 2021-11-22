@@ -10,5 +10,5 @@ As stated, we use 28 pixel at each time instance, so the input size is 28. As th
 
 | Variable | Dimensions |
 | -------- | ------ |
-| |X<sub>t<\sub>| | 28x1 |
-| 
+| X<sub>t</sub> | 28x1 |
+| asdf | fsd |
