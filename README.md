@@ -13,7 +13,7 @@ As stated, we use 28 pixel at each time instance, so the input size is 28. As th
 | X<sub>t</sub> | 28x1 |
 | h<sub>t</sub> | 186x1 |
 | s<sub>t</sub> | 186x1 |
-| U, U<sub>g</sub>, U<sub>f</sub>, U<sub>o</sub>  | 28x186 | 
 | W, W<sub>g</sub>, W<sub>f</sub>, W<sub>o</sub> | 186x186 |
+| U, U<sub>g</sub>, U<sub>f</sub>, U<sub>o</sub>  | 28x186 | 
 | b, b<sub>g</sub>, b<sub>f</sub>, b<sub>o</sub> | 186x1 |
 
