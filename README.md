@@ -29,7 +29,7 @@ LSTM performance:
 CNN performance:
 ![](https://github.com/ete2njit/CS482_CNN-RNN/blob/main/resources/CNN_performance.png)
 
-As can be seen, both models perform similarly well, with the LSTM model training slightly faster, at around 22.5 seconds per epoch compared to the CNN-models ~27.5 seconds, while the CNN model pulls slightly ahead in accuracy, at a peak and final validation accuracy of 91.3 and 90.94, respectively, whereas the single layer LSTM reaches a peak accuracy of 90.24 and a final accuracy of 89.96 on the validation set. In an effort to bring the accuracies closer together, I tried using a model with two stacked LSTM layers, which resulted in the following performance:
+As can be seen, both models perform similarly well, with the LSTM model training slightly faster, at 13 miliseconds per step compared to the CNN-models 16 miliseconds, while the CNN model pulls slightly ahead in accuracy, at a peak and final validation accuracy of 91.3 and 90.94, respectively, whereas the single layer LSTM reaches a peak accuracy of 90.24 and a final accuracy of 89.96 on the validation set. In an effort to bring the accuracies closer together, I tried using a model with two stacked LSTM layers, which resulted in the following performance:
 
 2 layer LSTM performance:
 ![](https://github.com/ete2njit/CS482_CNN-RNN/blob/main/resources/LSTM_2_layer_performance.png)
