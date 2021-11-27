@@ -34,3 +34,9 @@ As can be seen, both models perform similarly well, with the LSTM model training
 
 2 layer LSTM performance:
 ![](https://github.com/ete2njit/CS482_CNN-RNN/blob/main/resources/LSTM_2_layer_performance.png)
+
+As can be seen, the accuracy of this model is slightly more competitive, but in doing so the parametercount grew from ~160k (single layer LSTM) to ~3.2m, and the time per step rose from 13 miliseconds to 37 miliseconds, meaningfully slower than the CNN model.
+
+# Problem 4, CNN + RNN in multi-label classification)
+
+As we can see in the performance comparisons above, CNN's seem to perform better at classifying images than LSTM neurons do. However, one thing LSTM neurons are very competent at is context evaluation. 
