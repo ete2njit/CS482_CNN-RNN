@@ -20,6 +20,7 @@ As stated, we use 28 pixel at each time instance, so the input size is 28. As th
 # Problem 2, Implementation)
 
 [Here](https://colab.research.google.com/drive/1tf-U-YScYBok_h41_JqFSmZFpwBjQk5z?usp=sharing) is the implementation of the LSTM architecture laid out above, as well as a CNN implementation.
+Alternatively, the same notebook can be found under this repository's resource folder [here](https://github.com/ete2njit/CS482_CNN-RNN/blob/main/resources/CNN_RNN.ipynb)
 
 # Problem 3, Performance
 
