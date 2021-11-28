@@ -62,7 +62,7 @@ This idea of narrowing the search space is expressed in the training section 3.4
 The novelty of the proposed model is the use of 'memory' through an RNN cell to allow the model to not treat labels as independent. For the above reasons, it makes sense that such an addition would lend itself towards multi-label classification. However, in the task of single-label prediction such as in the fashion-MNIST dataset, this combination of RNN and CNN does not add much value. The main addition is the implicitly created label embedding space, which describes how closely related the model has learned labels to be. This could be used, even in a single label environment, to weigh the magnitude of errors by a more rigorous measurement than just prediction likelihood alone, but also by difference of labels. In the fashion-MNIST case, for example, of the ten labels, the labels 'Shirt' and 'T-shirt/top' are much semantically closer than 'Shirt' and 'Ankle Boot' are. The CNN RNN model in the paper, demonstrates an ability to learn label redundancies and co-occurence, which can be applied to differentiate between the severity of misclassifications by analysing the distance in label embeddings, which can be used to better train a model.
 
 
-#Works Used
+# Works Used
 
 Eckhardt, Karsten. 'Choosing the right Hyperparameters for a simple LSTM using Keras'. Towards Data Science. Nov, 2018.
 Wang, Jiang et al. 'CNN-RNN: A Unified Framework for Multi-label Image Classification'. IEEE.
