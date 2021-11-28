@@ -65,4 +65,5 @@ The novelty of the proposed model is the use of 'memory' through an RNN cell to 
 # Works Used
 
 Eckhardt, Karsten. 'Choosing the right Hyperparameters for a simple LSTM using Keras'. Towards Data Science. Nov, 2018.
+
 Wang, Jiang et al. 'CNN-RNN: A Unified Framework for Multi-label Image Classification'. IEEE.
