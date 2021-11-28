@@ -1,4 +1,4 @@
-# Problem 1, Architecture)
+# Problem 1, Architecture
 
 The fashion MNIST dataset contains 28x28 pixel pictures, which each fall under one of ten categories. We can use an RNN to classify these objects by considering 28 pixels at a time, over the course of 28 timesteps. This way, each pixel will impact the final decision, while making use of RNNs 'memory' to keep track of the most meaningful features. Following the advice from Karsten Eckhardt's ['Choosing the right Hyperparameters for a simple LSTM using Keras'](https://towardsdatascience.com/choosing-the-right-hyperparameters-for-a-simple-lstm-using-keras-f8e9ed76f046), I used a single LSTM cell, as the complexity a single cell can capture should suffice for this task.
 
@@ -31,7 +31,7 @@ with slightly different dimensionalities:
 
 ![2 layer architecture dimensions](https://github.com/ete2njit/CS482_CNN-RNN/blob/main/resources/outputrnn2.png)
 
-# Problem 2, Implementation)
+# Problem 2, Implementation
 
 [Here](https://colab.research.google.com/drive/1tf-U-YScYBok_h41_JqFSmZFpwBjQk5z?usp=sharing) is the implementation of the LSTM architecture laid out above, as well as a CNN implementation. The implemented CNN architecture can be seen at [this link](https://github.com/ete2njit/CS482_CNN-RNN/blob/main/resources/outputcnn.png).
 Alternatively, the same notebook can be found under this repository's resource folder [here](https://github.com/ete2njit/CS482_CNN-RNN/blob/main/resources/CNN_RNN.ipynb)
@@ -51,7 +51,7 @@ As can be seen, both models perform similarly well, with the LSTM model training
 
 As can be seen, the accuracy of this model is slightly more competitive, but in doing so the parametercount grew from ~160k (single layer LSTM) to ~3.2m, and the time per step rose from 13 miliseconds to 37 miliseconds, meaningfully slower than the CNN model.
 
-# Problem 4, CNN + RNN in multi-label classification)
+# Problem 4, CNN + RNN in multi-label classification
 
 As we can see in the performance comparisons above, CNN's seem to perform better at classifying images than LSTM neurons do. However, one thing LSTM neurons are very competent at is context evaluation. In the research paper 'CNN-RNN: A Unified Framework for Multi-label Image Classification', the researchers describe a model that aims to lean into the strengths of these two architectures. Their model utilizes a pre-trained 16 layer network as the CNN module to create an image representation. This image representation is then used by the RNN to generate a label-vector. Using this label-vector, the network calculates the distance to label embeddings and can output label probabilities accordingly. After this step, the model tries to predict another label, this time with the 'knowledge' or 'memory' of the previously predicted label, due to the nature of RNN cells. This leads to the RNN implicitly learning an attention pattern, as illustrated in the paper in figure 10. 
 
