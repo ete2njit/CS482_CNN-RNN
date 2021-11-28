@@ -21,9 +21,9 @@ As stated, we use 28 pixel at each time instance, so the input size is 28. As th
 
 ![lstm dimensions](https://github.com/ete2njit/CS482_CNN-RNN/blob/main/resources/outputrnn.png)
 
-The final output h<sub>28</sub> is then given as input to a fully connected neural network equivalent to matrix V of dimensionality |V| = 28\*186 such that \\
+The final output h<sub>28</sub> is then given as input to a fully connected neural network equivalent to matrix V of dimensionality |V| = 10\*186 such that \\
 V \* h<sub>28</sub>
-results in a 28x1 vector, which is then given to a softmax function to attain a final probability distribution with 10 classes.
+results in a 10x1 vector, which is then given to a softmax function to attain a final probability distribution with 10 classes.
 
 I also make use of a 2 layer LSTM network in the performance comparison, with architecture:
 
